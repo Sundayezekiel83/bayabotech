@@ -41,7 +41,7 @@ const Header = () => {
             >
               <nav className="absolute right-0 top-[90px] w-full max-w-[350px] rounded-lg border border-blue-200 bg-white py-5 px-6 shadow-lg shadow-blue-400/5 transition-all lg:static lg:block lg:max-w-full lg:border-none lg:shadow-none lg:bg-transparent lg:px-0 lg:py-0">
                 <ul className="flex justify-center gap-8 flex-col lg:flex-row">
-                  <li>
+                  <li onClick={() => setToggleNav(false)}>
                     <a
                       href=""
                       className="text-lg font-medium text-slate-700 duration-200 hover:text-appcolor-500 lg:text-base"
@@ -49,7 +49,7 @@ const Header = () => {
                       Home
                     </a>
                   </li>
-                  <li>
+                  <li onClick={() => setToggleNav(false)}>
                     <a
                       href="#about-us"
                       className="text-lg font-medium text-slate-700 duration-200 hover:text-appcolor-500 lg:text-base"
