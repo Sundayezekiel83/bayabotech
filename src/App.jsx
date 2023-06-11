@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./component/Header";
 import HeroSection from "./component/HeroSection";
 import Features from "./component/Features";
-import Services from "./component/services";
+import Services from "./component/Services";
 import Contact from "./component/Contact";
 import Footer from "./component/Footer";
 
