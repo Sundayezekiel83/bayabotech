@@ -33,7 +33,7 @@ const HeroSection = () => {
                   Register Now
                 </button>
 
-                <div className="mt-6 flex flex-wrap gap-4">
+                <div className="mt-6 grid grid-cols-4 gap-4">
                   <img
                     src={brand1}
                     alt="brand"
