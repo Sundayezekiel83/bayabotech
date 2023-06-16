@@ -49,7 +49,7 @@ const Header = () => {
                       Home
                     </a>
                   </li>
-                  <li onClick={() => setToggleNav(false)}>
+                  <li>
                     <a
                       href="#about-us"
                       className="text-lg font-medium text-slate-700 duration-200 hover:text-appcolor-500 lg:text-base"
@@ -80,11 +80,19 @@ const Header = () => {
 
             <div className="flex">
               <button className="block lg:hidden">
-                <IonIcon
-                  name="menu-outline"
-                  className="text-4xl text-appcolor-500"
-                  onClick={() => setToggleNav(!toggleNav)}
-                />
+                {toggleNav ? (
+                  <IonIcon
+                    name="close-outline"
+                    className="text-4xl text-appcolor-500"
+                    onClick={() => setToggleNav(!toggleNav)}
+                  />
+                ) : (
+                  <IonIcon
+                    name="menu-outline"
+                    className="text-4xl text-appcolor-500"
+                    onClick={() => setToggleNav(!toggleNav)}
+                  />
+                )}
               </button>
             </div>
           </div>
